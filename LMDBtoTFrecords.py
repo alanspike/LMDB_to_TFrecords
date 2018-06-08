@@ -63,16 +63,12 @@ if __name__ == '__main__':
 						help='the input lmdb folder',
 						default=None,
 						type=str)
-    
-    parser.add_argument('--output_path',
+	parser.add_argument('--output_path',
 						help='the output *.tfrecords',
 						default=None,
 						type=str)
-
-    args = parser.parse_args()
-
-
-    LMDBtoTFrecord(args.lmdb_path, args.output_path)
+	args = parser.parse_args()
+	LMDBtoTFrecord(args.lmdb_path, args.output_path)
 
 	
 
